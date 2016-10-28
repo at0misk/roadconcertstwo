@@ -738,7 +738,7 @@ window.onbeforeunload = function () {
       text-align: center;
     }
     .main-header{
-      margin-top: 25%;
+      margin-top: 17%;
       color: white;
       margin-bottom: 0;
     }
@@ -836,6 +836,21 @@ window.onbeforeunload = function () {
     height: 500px;
     padding: 30px;
   }
+  .par1 h1{
+    font-size: 10em;
+  }
+  .par1 h3{
+    font-size: 6em;
+  }
+  .par1 h4{
+    font-size: 5em;
+  }
+  .fakelink{
+    color: #039be5;
+  }
+  .table-of-contents a.active {
+    border-left: 2px solid #039be5;
+  }
    </style>
 </head>
 <body>
@@ -843,7 +858,7 @@ window.onbeforeunload = function () {
     <div class="row">
     <div class="col hide-on-small-only m3 l2">
       <ul class="section table-of-contents">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">Press Release</a></li>
         <li><a href="#call">Call For Submissions</a></li>
         <li><a href="#map">Interactive Map</a></li>
         <li><a href="#social">Social Media</a></li>
@@ -852,10 +867,12 @@ window.onbeforeunload = function () {
   </div>
 </div>
   <div class="parallax-container par1">
-      <h1 class="main-header">LA Road Concerts</h1>
+      <a href="#about"><h1 class="main-header">LA Road Concerts</h1>
       <h3 class="main-sub">A Day Of Rememberance</h3>
+      <h3 class="main-sub">11.20.16</h3>
+      <h4 class="main-sub">DTLA</h4></a>
     <div class="parallax">
-      <img src="http://hdwallpaperia.com/wp-content/uploads/2013/12/Hi-Res-Desktop-Backgrounds-Free.jpg">
+      <%= image_tag 'bg1.png' %>
     </div>
   </div>
   <div class="row container section scrollspy" id="about">
@@ -864,7 +881,7 @@ window.onbeforeunload = function () {
         <li>
     <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <div class="text-activator activator"><h2 class="activator">LA Road Concerts is blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah.  Learn more.</h2></div>
+      <div class="text-activator activator"><h2 class="activator">LA Road Concerts is an ongoing series of daylong art, music, literary and performance extravaganzas happening in LA's unused public spaces.  <span class="fakelink activator">Learn more</span>.</h2></div>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Press Release<i class="material-icons right">close</i></span>
@@ -898,23 +915,27 @@ window.onbeforeunload = function () {
   <div class="section white second-text">
       <ul id="second-staggered">
         <li>
+             <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <div class="text-activator activator"><h2 class="activator">LA Road Concerts is seeking artists of all kinds to install or perform works in unused public space in DTLA on Nov 20.  <span class="fakelink activator">Learn more</span>.</h2></div>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Call For Submissions<i class="material-icons right">close</i></span>
           <p>Los Angeles Road Concerts is seeking artists of all kinds to install or perform site-specific works in unused public space in Downtown Los Angeles along a loop made of 1st, Spring, 9th and Main St. as part of World Day of Remembrance for Road Traffic Victims, Sunday, November 20, 2016. Submissions may be sent through the <a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2">online form</a> or to <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a></p>
-        </li>
-        <li>
+
           <p>In four previous events, LA Road Concerts has shown work from over 250 Los Angeles artists in unused public outdoor space. In a “road concert” participating artists display installations, perform works, facilitate carpool happenings, host spontaneous readings, and make music in unexpected spaces, such as on the sidewalk, between dumpsters, along streetlamps, as well as inside the audience’s earbuds as they traverse the path of the road concert. Audience members can walk, bike, skateboard, carpool or take public transit. They can time it to see it all, go it unplanned, or carefully curate their day.</p>
-        </li>
-        <li>
+
            <p>LA Road Concerts seeks to investigate the possibilities of LA's streets as sites for artistic exploration while offering a street-level window onto the city's diversity of people, buildings and landscapes, how the metropolis grew and cars came to dominate, and the in-between and negative spaces the city left behind as it expanded. Through a wide open call process, LA Road Concerts brings together art school graduates, working artists, local residents and other artists, writers, musicians, performers, to realize a broad array of kinds of interactions with the sites.</p>
-        </li>
-        <li>
+
             <p>This particular road concert is part of the annual World Day of Remembrance for Road Traffic Victims (<a href="http://worlddayofremembrance.org">http://worlddayofremembrance.org</a>), commemorating the many millions killed and injured on the world’s roads, together with their families and communities. For pedestrians, DTLA is the most dangerous area of the most dangerous US city. Over 600 people on foot were hit by cars in DTLA over 12 years, averaging a person a week. More facts and statistics can be found <a href="https://docs.google.com/document/d/11GUiZrdHXPIGHpcy2MaaYZOWObT--oH9xzhE0p49Ow8/edit">here</a>. This road concert asks participating artists of any medium to make works that bring awareness to traffic casualties, ponder solutions and utopias, remember the victims, investigate car culture, and explore the complexity of the problem, such as what causes people to make dangerous decisions like texting or drinking while driving, or how our transit systems reflect America's race and class inequalities and privilege the able bodied.</p>
-        </li>
-        <li>
+
             <p>Please contact us with any proposals, questions, or suggestions at <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a>. Or feel free to call or text me (Stephen van Dyck) at <a href="tel:505-331-9588" value="+15033319588" targe="_blank">505-331-9588</a> to discuss your potential submission. And please forward this along to anyone who you think would be interested in getting involved.</p>
              
             <p>Thank you,</p>
              
             <p>LA Road Concerts / Stephen van Dyck</p>
+    </div>
+  </div>
         </li>
       </ul>
 </div>
