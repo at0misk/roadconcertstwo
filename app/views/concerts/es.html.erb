@@ -29,7 +29,7 @@ window.onbeforeunload = function () {
       $('.scrollspy').scrollSpy();
       $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
         var options = [
-        {selector: '.first-text', offset: 600, callback: function(){
+        {selector: '.first-text', offset: 550, callback: function(){
           $('.tabs-wrapper').fadeIn(1100);
           console.log('hit');
         }},
@@ -323,12 +323,12 @@ window.onbeforeunload = function () {
     var contentStringCityHall = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Los Angeles City Hall</h6>'+
+        '<h6>Ayuntamiento de Los Ángeles</h6>'+
         '</div>';
     var contentStringIndie = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Downtown Independent</h6>'+
+        '<h6>The Downtown Independent</h6>'+
         '</div>';
     var contentStringSmell = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -363,17 +363,17 @@ window.onbeforeunload = function () {
     var contentStringLAPD = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Los Angeles Police Department</h6>'+
+        '<h6>Departamento de Policía de Los Ángeles</h6>'+
         '</div>';
     var contentStringTransport = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>California Department of Transportation (Caltrans)</h6>'+
+        '<h6>Departamento de Transporte de California (Caltrans)</h6>'+
         '</div>';
     var contentStringSkid = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Skid Row Housing Trust Tenant</h6>'+
+        '<h6>Skid Row Housing Trust</h6>'+
         '</div>';
     var contentStringLofts = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -383,7 +383,7 @@ window.onbeforeunload = function () {
     var contentStringVanNuys = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Van Nuys Apartments</h6>'+
+        '<h6>Van Nuys Apartamentos</h6>'+
         '</div>';
     var contentStringPremiere = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -393,17 +393,17 @@ window.onbeforeunload = function () {
     var contentStringImmigration = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Immigration Center For Women and Children</h6>'+
+        '<h6>Centro de Inmigración para Mujeres y Niños</h6>'+
         '</div>';
     var contentStringSpringMac = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>Spring Street Mac - iPhone & Mac Repair</h6>'+
+        '<h6>Spring Street Mac - Iphone & Mac Repair</h6>'+
         '</div>';
     var contentStringPostal = '<div id="content">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h6>United States Postal Service</h6>'+
+        '<h6>Servicio Postal de los Estados Unidos</h6>'+
         '</div>';
     var contentStringClaudio = '<div id="content">'+
         '<div id="siteNotice">'+
@@ -419,13 +419,13 @@ window.onbeforeunload = function () {
     var markerCityHall = new google.maps.Marker({
       position: cityHall,
       map: mapInteractive,
-      title: 'Los Angeles City Hall',
+      title: 'Ayuntamiento de Los Ángeles',
       icon: "<%= escape_javascript asset_path('statebuilding_icon.png') %>"
     });
     var markerIndie = new google.maps.Marker({
       position: indie,
       map: mapInteractive,
-      title: 'Downtown Independent',
+      title: 'The Downtown Independent',
       icon: "<%= escape_javascript asset_path('camera_icon.png') %>"
     });
     var markerSmell = new google.maps.Marker({
@@ -467,19 +467,19 @@ window.onbeforeunload = function () {
     var markerLAPD = new google.maps.Marker({
       position: lapd,
       map: mapInteractive,
-      title: 'Los Angeles Police Department',
+      title: 'Departamento de Policía de Los Ángeles',
       icon: "<%= escape_javascript asset_path('police_icon.png') %>"
     });
     var markerTransport = new google.maps.Marker({
       position: transport,
       map: mapInteractive,
-      title: 'California Department of Transportation (Caltrans)',
+      title: 'Departamento de Transporte de California (Caltrans)',
       icon: "<%= escape_javascript asset_path('bus_icon.png') %>"
     });
     var markerSkid = new google.maps.Marker({
       position: skid,
       map: mapInteractive,
-      title: 'Skid Row Housing Trust Tenant',
+      title: 'Skid Row Housing Trust',
       icon: "<%= escape_javascript asset_path('house_icon.png') %>"
     });
     var markerLofts = new google.maps.Marker({
@@ -491,7 +491,7 @@ window.onbeforeunload = function () {
     var markerVanNuys = new google.maps.Marker({
       position: vanNuys,
       map: mapInteractive,
-      title: 'Van Nuys Apartments',
+      title: 'Van Nuys Apartamentos',
       icon: "<%= escape_javascript asset_path('apartment_icon.png') %>"
     });
     var markerPremiere = new google.maps.Marker({
@@ -503,19 +503,19 @@ window.onbeforeunload = function () {
     var markerImmigration = new google.maps.Marker({
       position: immigration,
       map: mapInteractive,
-      title: 'Immigration Center For Women and Children',
+      title: 'Centro de Inmigración para Mujeres y Niños',
       icon: "<%= escape_javascript asset_path('woman_icon.png') %>"
     });
     var markerSpringMac = new google.maps.Marker({
       position: springMac,
       map: mapInteractive,
-      title: 'Spring Street Mac - iPhone & Mac Repair',
+      title: 'Spring Street Mac - Iphone & Mac Repair',
       icon: "<%= escape_javascript asset_path('apple_icon.png') %>"
     });
     var markerPostal = new google.maps.Marker({
       position: postal,
       map: mapInteractive,
-      title: 'United States Postal Service',
+      title: 'Servicio Postal de los Estados Unidos',
       icon: "<%= escape_javascript asset_path('mail_icon.png') %>"
     });
     var markerClaudio = new google.maps.Marker({
@@ -875,7 +875,7 @@ window.onbeforeunload = function () {
     padding: 70px;
   }
   .par1 h1{
-    font-size: 10em;
+    font-size: 7em;
   }
   .par1 h3{
     font-size: 6em;
@@ -936,7 +936,6 @@ window.onbeforeunload = function () {
       /*right: 0;*/
       position: absolute;
       margin: 20px;
-      z-index: 99 !important;
     }
    </style>
 </head>
@@ -945,15 +944,15 @@ window.onbeforeunload = function () {
     <div class="row">
     <div class="col hide-on-small-only m3 l2">
       <ul class="section table-of-contents">
-        <li><a href="#about" id="pr">Press Release</a></li>
-        <li><a href="#call" id="cf">Call For Submissions</a></li>
-        <li><a href="#mailinglist">Mailing List</a></li>
-        <span class="submission-form"><li><a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">Submission Form</a></li></span>
-        <li><a href="#map">Interactive Map</a></li>
-        <span class="submission-form"><li><a id="pdf" onclick="Materialize.toast('PDF Coming Soon', 2000)">Printable PDF</a></li></span>
+        <li><a href="#about" id="pr">Comunicado de Prensa</a></li>
+        <li><a href="#call" id="cf">Solicitud Para Proyectos</a></li>
+        <li><a href="#mailinglist">Suscríbase</a></li>
+        <span class="submission-form"><li><a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">Formulario</a></li></span>
+        <li><a href="#map">El Mapa Interactivo</a></li>
+        <span class="submission-form"><li><a id="pdf" onclick="Materialize.toast('Venir Pronto', 2000)">Imprimible PDF</a></li></span>
         <li><a href="#social">Twitter Instagram</a></li>
         <li><a href="https://www.facebook.com/laroadconcerts/" target="_blank">Facebook</a></li>
-        <li><a id="pastevents">Past Events</a></li>
+        <li><a id="pastevents" onclick="Materialize.toast('Venir Pronto', 2000)">Eventos Pasados</a></li>
         <span class="submission-form"><li><a href="https://at0misk.github.io/" id="pdf" target="_blank">Mulholland Dérive</a></li></span>
         <span class="submission-form"><li><a href="https://at0misk.github.io/washington.htm" id="pdf" target="_blank">Washington Blvd</a></li></span>
         <span class="submission-form"><li><a href="https://at0misk.github.io/sunset.htm" id="pdf" target="_blank">Sunset Blvd</a></li></span>
@@ -963,13 +962,13 @@ window.onbeforeunload = function () {
   </div>
 </div>
   <div class="parallax-container par1">
-    <form action="/es" method="get">
-    <button class="btn waves-effect waves-light light-blue" type="submit" name="action" id="es">Ver en Español</button>
+    <form action="/" method="get">
+    <button class="btn waves-effect waves-light light-blue" type="submit" name="action" id="es">View in English</button>
     </form>
       <a href="#about"><h1 class="main-header">LA Road Concerts</h1>
-      <h3 class="main-sub">A Day Of Rememberance</h3>
+      <h3 class="main-sub">Día Mundial en Recuerdo</h3>
       <h3 class="main-sub">11.20.16</h3>
-      <h4 class="main-sub">DTLA</h4></a>
+      <h4 class="main-sub">Bucle Centro de Los Ángeles</h4></a>
     <div class="parallax">
       <%= image_tag 'bg1.png' %>
     </div>
@@ -980,21 +979,21 @@ window.onbeforeunload = function () {
         <li>
     <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <div class="text-activator activator"><h2 class="activator">LA Road Concerts is an ongoing series of daylong art, music, literary and performance extravaganzas happening in LA's unused public spaces.  <span class="fakelink activator fl1">Press Release</span>.</h2></div>
+      <div class="text-activator activator"><h2 class="activator">LA Road Concerts es una serie de la extravagancia de arte, música, literatura, y performance ubicado en espacios libres al publico. <span class="fakelink activator fl1">Comunicado de Prensa</span>.</h2></div>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Press Release<i class="material-icons right">close</i></span>
-          <p>Los Angeles Road Concerts is seeking artists of all kinds to install or perform site-specific works in unused public space in Downtown Los Angeles along a loop made of 1st, Spring, 9th and Main St. as part of World Day of Remembrance for Road Traffic Victims, Sunday, November 20, 2016. Submissions may be sent through the <a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">online form</a> or to <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a></p>
+      <span class="card-title grey-text text-darken-4">Comunicado de Prensa<i class="material-icons right">close</i></span>
+          <p>LA Road Concerts está buscando artistas de todo tipo para instalar o realizar obras artísticas en espacios públicos no utilizados en El Centro de Los Ángeles a lo largo de un bucle hecha de 1ª, Spring, 9ª y Main como parte del Día Mundial en Recuerdo de las Víctimas de Tráfico de la Carretera, el domingo, 20 de noviembre del 2016. las propuestas pueden ser enviadas a través del <a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">formulario</a> en línea o mandada a <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a></p>
 
-          <p>In four previous events, LA Road Concerts has shown work from over 250 Los Angeles artists in unused public outdoor space. In a “road concert” participating artists display installations, perform works, facilitate carpool happenings, host spontaneous readings, and make music in unexpected spaces, such as on the sidewalk, between dumpsters, along streetlamps, as well as inside the audience’s earbuds as they traverse the path of the road concert. Audience members can walk, bike, skateboard, carpool or take public transit. They can time it to see it all, go it unplanned, or carefully curate their day.</p>
+          <p>En cuatro eventos anteriores, LA Road Concerts ha mostrado el trabajo de más de 250 artistas de Los Ángeles en espacios públicos al aire libre. En LA Road Concerts, artistas muestran instalaciones, realizan obras dramáticas, facilitan el uso de compartido de coche, presentan lecturas espontáneas, y hacen música en espacios inesperados, como en la acera, entre los contenedores de basura, a lo largo de las farolas, tanto como en el interior de los auriculares de la audiencia, mientras recorren el camino del “LA Road Concerts.” Los miembros del público pueden caminar, montar bicicleta, andar en monopatín, viajar en coche compartido, o tomar el transporte público. Pueden tomar el tiempo para verlo todo, andar en él sin ningún itinerario, o planificar cuidadosamente su día.</p>
 
-           <p>LA Road Concerts seeks to investigate the possibilities of LA's streets as sites for artistic exploration while offering a street-level window onto the city's diversity of people, buildings and landscapes, how the metropolis grew and cars came to dominate, and the in-between and negative spaces the city left behind as it expanded. Through a wide open call process, LA Road Concerts brings together art school graduates, working artists, local residents and other artists, writers, musicians, performers, to realize a broad array of kinds of interactions with the sites.</p>
+           <p>LA Road Concerts intenta investigar las posibilidades de las calles de Los Ángeles como sitios para la exploración artística y al mismo tiempo ofrecer una ventana a nivel de la calle a la diversidad de la gente, edificios, y paisajes de la cuidad, la forma en cómo la metrópolis  creció y carros llegaron a dominar, y los espacios negativos que la ciudad dejó mientras se expandía. A través de un proceso de solicitud muy abierto, LA Road Concerts reúne a graduados de escuelas de arte, artistas que trabajan, residentes locales y otros artistas, escritores, y músicos, para realizar una amplia gama de todo tipo de interacciones con los sitios.</p>
 
-            <p>This particular road concert is part of the annual World Day of Remembrance for Road Traffic Victims (<a href="http://worlddayofremembrance.org">http://worlddayofremembrance.org</a>), commemorating the many millions killed and injured on the world’s roads, together with their families and communities. For pedestrians, DTLA is the most dangerous area of the most dangerous US city. Over 600 people on foot were hit by cars in DTLA over 12 years, averaging a person a week. More facts and statistics can be found <a href="https://docs.google.com/document/d/11GUiZrdHXPIGHpcy2MaaYZOWObT--oH9xzhE0p49Ow8/edit">here</a>. This road concert asks participating artists of any medium to make works that bring awareness to traffic casualties, ponder solutions and utopias, remember the victims, investigate car culture, and explore the complexity of the problem, such as what causes people to make dangerous decisions like texting or drinking while driving, or how our transit systems reflect America's race and class inequalities and privilege the able bodied.</p>
-
-            <p>Please contact us with any proposals, questions, or suggestions at <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a>. Or feel free to call or text me (Stephen van Dyck) at <a href="tel:505-331-9588" value="+15033319588" target="_blank">505-331-9588</a> to discuss your potential submission. And please forward this along to anyone who you think would be interested in getting involved.</p>
+            <p>Este LA Road Concerts en particular es parte del Día Mundial en Recuerdo de las Víctimas de Accidentes de Tráfico (<a href="http://worlddayofremembrance.org">http://worlddayofremembrance.org</a>), en conmemoración de los muchos millones de muertos y heridos en las carreteras del mundo, junto con sus familias y comunidades. Para peatones, El Centro de Los Ángeles es la zona más peligrosa de la ciudad más peligrosa de Estados Unidos. Más de 600 personas a pie fueron golpeados por los carros en El Centro de Los Ángeles durante un periodo de 12 años, haciendo un promedio de una persona a la semana. Más datos y estadísticas se pueden encontrar en <a href="https://docs.google.com/document/d/11GUiZrdHXPIGHpcy2MaaYZOWObT--oH9xzhE0p49Ow8/edit">este sitio</a>.  Este “Concierto de la Calles” pide que los artistas participantes de cualquier medio que hagan obras que traen conciencia a los accidentes de tráfico, reflexionan soluciones y utopías, recuerden a las víctimas, investigan la cultura del automóvil, y exploran la complejidad del problema, como qué provoca a las personas tomar decisiones peligrosas como mandar mensajes de texto o beber mientras conducen, o cómo nuestros sistemas de transporte reflejan las desigualdades de raza y clase de los Estados Unidos y dan privilegio a la gente capaz.</p>
              
-            <p>Thank you,</p>
+            <p>Favor de ponerse en contacto con nosotros con cualquier propuesta, pregunta, y sugerencia a <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com</a>. O no dude en llamarme o textearme (Stephen van Dyck) al <a href="tel:505-331-9588" value="+15033319588" target="_blank">505-331-9588</a> para discutir su idea o presentación. Y favor de reenviar esta información a cualquier persona que usted piensa que estaría interesado en participar.</p>
+
+            <p>Atentamente,</p>
              
             <p>LA Road Concerts / Stephen van Dyck</p>
     </div>
@@ -1004,7 +1003,7 @@ window.onbeforeunload = function () {
 </div>
 </div>
   <div class="parallax-container par2">
-    <h3 class="call-header">Call For Submissions</h3>
+    <h3 class="call-header">Solicitud Para Proyectos</h3>
     <div class="parallax">
       <%= image_tag 'ideatruck.jpg' %>
     </div>
@@ -1016,21 +1015,21 @@ window.onbeforeunload = function () {
         <li>
              <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <div class="text-activator activator"><h2 class="activator">LA Road Concerts is seeking artists of all kinds to install or perform works in unused public space in DTLA on Nov 20.  <span class="fakelink activator fl2">Call For Submissions</span>.</h2></div>
+      <div class="text-activator activator"><h2 class="activator">LA Road Concerts está buscando artistas de todo tipo para instalar o realizar obras artísticas en espacios públicos no utilizados en El Centro de Los Ángeles a lo largo de un bucle, el domingo, 20 de noviembre del 2016.  <span class="fakelink activator fl2">Solicitud Para Proyectos</span>.</h2></div>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Call For Submissions<i class="material-icons right">close</i></span>
-          <p>Los Angeles Road Concerts is seeking artists of all kinds to install or perform site-specific works in unused public space in Downtown Los Angeles along a loop made of 1st, Spring, 9th and Main St. as part of World Day of Remembrance for Road Traffic Victims, Sunday, November 20, 2016. Submissions may be sent through the <a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">online form</a> or to <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a></p>
+      <span class="card-title grey-text text-darken-4">Solicitud Para Proyectos<i class="material-icons right">close</i></span>
+          <p>LA Road Concerts está buscando artistas de todo tipo para instalar o realizar obras artísticas en espacios públicos no utilizados en El Centro de Los Ángeles a lo largo de un bucle hecha de 1ª, Spring, 9ª y Main como parte del Día Mundial en Recuerdo de las Víctimas de Tráfico de la Carretera, el domingo, 20 de noviembre del 2016. las propuestas pueden ser enviadas a través del <a href="https://goo.gl/forms/JMIEgPPblSIpXxgJ2" target="_blank">formulario</a> en línea o mandada a <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a></p>
 
-          <p>In four previous events, LA Road Concerts has shown work from over 250 Los Angeles artists in unused public outdoor space. In a “road concert” participating artists display installations, perform works, facilitate carpool happenings, host spontaneous readings, and make music in unexpected spaces, such as on the sidewalk, between dumpsters, along streetlamps, as well as inside the audience’s earbuds as they traverse the path of the road concert. Audience members can walk, bike, skateboard, carpool or take public transit. They can time it to see it all, go it unplanned, or carefully curate their day.</p>
+          <p>En cuatro eventos anteriores, LA Road Concerts ha mostrado el trabajo de más de 250 artistas de Los Ángeles en espacios públicos al aire libre. En LA Road Concerts, artistas muestran instalaciones, realizan obras dramáticas, facilitan el uso de compartido de coche, presentan lecturas espontáneas, y hacen música en espacios inesperados, como en la acera, entre los contenedores de basura, a lo largo de las farolas, tanto como en el interior de los auriculares de la audiencia, mientras recorren el camino del LA Road Concerts. Los miembros del público pueden caminar, montar bicicleta, andar en monopatín, viajar en coche compartido, o tomar el transporte público. Pueden tomar el tiempo para verlo todo, andar en él sin ningún itinerario, o planificar cuidadosamente su día.</p>
 
-           <p>LA Road Concerts seeks to investigate the possibilities of LA's streets as sites for artistic exploration while offering a street-level window onto the city's diversity of people, buildings and landscapes, how the metropolis grew and cars came to dominate, and the in-between and negative spaces the city left behind as it expanded. Through a wide open call process, LA Road Concerts brings together art school graduates, working artists, local residents and other artists, writers, musicians, performers, to realize a broad array of kinds of interactions with the sites.</p>
+           <p>LA Road Concerts intenta investigar las posibilidades de las calles de Los Ángeles como sitios para la exploración artística y al mismo tiempo ofrecer una ventana a nivel de la calle a la diversidad de la gente, edificios, y paisajes de la cuidad, la forma en cómo la metrópolis  creció y carros llegaron a dominar, y los espacios negativos que la ciudad dejó mientras se expandía. A través de un proceso de solicitud muy abierto, LA Road Concerts reúne a graduados de escuelas de arte, artistas que trabajan, residentes locales y otros artistas, escritores, y músicos, para realizar una amplia gama de todo tipo de interacciones con los sitios.</p>
 
-            <p>This particular road concert is part of the annual World Day of Remembrance for Road Traffic Victims (<a href="http://worlddayofremembrance.org">http://worlddayofremembrance.org</a>), commemorating the many millions killed and injured on the world’s roads, together with their families and communities. For pedestrians, DTLA is the most dangerous area of the most dangerous US city. Over 600 people on foot were hit by cars in DTLA over 12 years, averaging a person a week. More facts and statistics can be found <a href="https://docs.google.com/document/d/11GUiZrdHXPIGHpcy2MaaYZOWObT--oH9xzhE0p49Ow8/edit">here</a>. This road concert asks participating artists of any medium to make works that bring awareness to traffic casualties, ponder solutions and utopias, remember the victims, investigate car culture, and explore the complexity of the problem, such as what causes people to make dangerous decisions like texting or drinking while driving, or how our transit systems reflect America's race and class inequalities and privilege the able bodied.</p>
+            <p>Este LA Road Concerts en particular es parte del Día Mundial en Recuerdo de las Víctimas de Accidentes de Tráfico (<a href="http://worlddayofremembrance.org">http://worlddayofremembrance.org</a>), en conmemoración de los muchos millones de muertos y heridos en las carreteras del mundo, junto con sus familias y comunidades. Para peatones, El Centro de Los Ángeles es la zona más peligrosa de la ciudad más peligrosa de Estados Unidos. Más de 600 personas a pie fueron golpeados por los carros en El Centro de Los Ángeles durante un periodo de 12 años, haciendo un promedio de una persona a la semana. Más datos y estadísticas se pueden encontrar en <a href="https://docs.google.com/document/d/11GUiZrdHXPIGHpcy2MaaYZOWObT--oH9xzhE0p49Ow8/edit">este sitio</a>.  Este LA Road Concerts pide que los artistas participantes de cualquier medio que hagan obras que traen conciencia a los accidentes de tráfico, reflexionan soluciones y utopías, recuerden a las víctimas, investigan la cultura del automóvil, y exploran la complejidad del problema, como qué provoca a las personas tomar decisiones peligrosas como mandar mensajes de texto o beber mientras conducen, o cómo nuestros sistemas de transporte reflejan las desigualdades de raza y clase de los Estados Unidos y dan privilegio a la gente capaz.</p>
 
-            <p>Please contact us with any proposals, questions, or suggestions at <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com.</a>. Or feel free to call or text me (Stephen van Dyck) at <a href="tel:505-331-9588" value="+15033319588" target="_blank">505-331-9588</a> to discuss your potential submission. And please forward this along to anyone who you think would be interested in getting involved.</p>
-             
-            <p>Thank you,</p>
+            <p>Favor de ponerse en contacto con nosotros con cualquier propuesta, pregunta, y sugerencia a <a href="mailto:laroadconcerts@gmail.com?Subject=Road%Concert%Submission" target="_top">laroadconcerts@gmail.com</a>. O no dude en llamarme o textearme (Stephen van Dyck) al <a href="tel:505-331-9588" value="+15033319588" target="_blank">505-331-9588</a> para discutir su idea o presentación. Y favor de reenviar esta información a cualquier persona que usted piensa que estaría interesado en participar.</p>
+
+            <p>Atentamente,</p>
              
             <p>LA Road Concerts / Stephen van Dyck</p>
     </div>
@@ -1041,9 +1040,9 @@ window.onbeforeunload = function () {
     </div>
   </div>
     <div class="parallax-container par2">
-    <h3 class="call-header">Mailing List</h3>
+    <h3 class="call-header">Suscríbase</h3>
     <div class="parallax">
-      <%= image_tag 'cardboard.jpg' %>
+      <%= image_tag 'sts.jpg' %>
     </div>
   </div>
     <div class="section white">
@@ -1052,26 +1051,26 @@ window.onbeforeunload = function () {
         <div class="parallax-container par3">
           <div class="row sub-form-row">
           <div class="col s12 formOut">
-            <h4>Join the mailing list to stay updated!</h4>
+            <h4>Suscríbase a nuestra lista de distribución!</h4>
             <form action='/mail' method='post' data-remote="false" id='mailerform'>
             <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
             <div class="input-field col s12">
               <i class="material-icons prefix">person</i>
-              <input type="text" name="first" placeholder="First Name">
+              <input type="text" name="first" placeholder="Primer Nombre">
             </div>
             <div class="input-field col s12">
               <i class="material-icons prefix">person_outline</i>
-              <input type="text" name="last" placeholder="Last Name">
+              <input type="text" name="last" placeholder="Apellido">
             </div>
             <div class="input-field col s12">
               <i class="material-icons prefix">email</i>
               <input type="text" name="email" placeholder="Email">
             </div>
-              <button class="btn waves-effect waves-light light-blue" type="submit" name="action">Join</button>
+              <button class="btn waves-effect waves-light light-blue" type="submit" name="action">Suscríbase</button>
             </form>
           </div>
           <div class="col s12 formIn">
-            <h4>Thank you for joining the mailing list!</h4>
+            <h4>Gracias por unirse a la lista de correo!</h4>
           </div>
         </div>
         </div>
@@ -1079,9 +1078,9 @@ window.onbeforeunload = function () {
     </div>
   </div>
   <div class="parallax-container par2">
-    <h3 class="call-header">Route and Possible Locations</h3>
+    <h3 class="call-header">El Mapa con Sitios Posibles</h3>
     <div class="parallax">
-      <%= image_tag 'construction.jpg' %>
+      <%= image_tag 'cityhall.jpg' %>
     </div>
   </div>
   <div class="container">
@@ -1091,16 +1090,16 @@ window.onbeforeunload = function () {
     </div>
 <ul id="legend" class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header">Possible Sites</div>
+      <div class="collapsible-header">Sitios Posibles</div>
       <div class="collapsible-body">
       <ul>
-        <li id="lapdL"><%= image_tag 'police.png' %>Los Angeles Police Department</li>
-        <li id="postalL"><%= image_tag 'mail.png' %>United States Postal Service</li>
-        <li id="cityhallL"><%= image_tag 'statebuilding.png' %>Los Angeles City Hall</li>
-        <li id="indieL"><%= image_tag 'camera.png' %>Downtown Independent</li>
+        <li id="lapdL"><%= image_tag 'police.png' %>Departamento de Policía de Los Ángeles</li>
+        <li id="postalL"><%= image_tag 'mail.png' %>Servicio Postal de los Estados Unidos</li>
+        <li id="cityhallL"><%= image_tag 'statebuilding.png' %>Ayuntamiento de Los Ángeles</li>
+        <li id="indieL"><%= image_tag 'camera.png' %>The Downtown Independent</li>
         <li id="premL"><%= image_tag 'apartment.png' %>Premiere Towers</li>
-        <li id="transL"><%= image_tag 'bus.png' %>California Department of Transportation</li>
-        <li id="vanL"><%= image_tag 'apartment.png' %>Van Nuys Appartments</li>
+        <li id="transL"><%= image_tag 'bus.png' %>Departamento de Transporte de California</li>
+        <li id="vanL"><%= image_tag 'apartment.png' %>Van Nuys Apartamentos</li>
         <li id="reaganL"><%= image_tag 'statebuilding.png' %>Ronald Reagan State Building</li>
         <li id="jaliscoL"><%= image_tag 'bottle.png' %>The New Jalisco Bar</li>
         <li id="lastL"><%= image_tag 'book.png' %>The Last Bookstore</li>
@@ -1109,19 +1108,20 @@ window.onbeforeunload = function () {
         <li id="loftL"><%= image_tag 'apartment.png' %>PE Lofts</li>
         <li id="latL"><%= image_tag 'news.png' %>The LA Times</li>
         <li id="smellL"><%= image_tag 'music.png' %>The Smell</li>
-        <li id="skidL"><%= image_tag 'house.png' %>Skid Row Housing Trust Tenant</li>
-        <li id="imL"><%= image_tag 'woman.png' %>Immigration Center For Women and Children</li>
-        <li id="macL"><%= image_tag 'apple.png' %>Spring Street Mac - iPhone & Mac Repair</li>
+        <li id="skidL"><%= image_tag 'house.png' %>Skid Row Housing Trust</li>
+        <li id="imL"><%= image_tag 'woman.png' %>Centro de Inmigración para Mujeres y Niños</li>
+        <li id="macL"><%= image_tag 'apple.png' %>Spring Street Mac - Iphone & Mac Repair</li>
         <li id="claudioL"><%= image_tag 'art.png' %>Claudio Ethos Mural</li>
       </ul>
       </div>
+
     </li>
   </ul>
   </div>
   </div>
 </div>
   <div class="parallax-container par2">
-    <h3 class="call-header">Social Media</h3>
+    <h3 class="call-header">Medios Sociales</h3>
     <div class="parallax">
       <%= image_tag 'sit.jpg' %>
     </div>

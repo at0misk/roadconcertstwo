@@ -1,6 +1,9 @@
 class ConcertsController < ApplicationController
   def index
   end
+  def es
+   render :layout => false
+  end
   def mail
   	UserMailer.email(params['first'], params['last'], params['email']).deliver_now
   	respond_to do |format|
