@@ -73,7 +73,9 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
+  config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+}
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 config.action_mailer.delivery_method = :smtp
@@ -82,7 +84,7 @@ config.action_mailer.smtp_settings = {
  :address              => "smtp.gmail.com",
  :port                 => 587,
  :user_name            => "ktmailer925",
- :password             => "pbdg0135",
+ :password             => "horse1horse1",
  :authentication       => "plain",
 :enable_starttls_auto => true
 }

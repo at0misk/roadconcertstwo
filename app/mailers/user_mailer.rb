@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
  
   def email(first, last, address)
     @url  = 'http://example.com/login'
-    mail(to: 'ktmailer925@gmail.com', subject: 'Road Concerts Mailing List', body: first + " " + last + " " + address)
+    mail(to: 'laroadconcerts@gmail.com', subject: 'Road Concerts Mailing List', body: first + " " + last + " " + address)
   end
 
 end
